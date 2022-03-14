@@ -49,7 +49,7 @@ namespace CalculadoraPOO.ConsoleApp
                             Console.Write("\nResultado: {0}\n", (Util.ApresentaUmDoubleComDuasCasasDecimais(calculadora.Somar(v1, v2))));
                         }
                         else
-                            Console.WriteLine("Alguma das entradas é inválida!!\n");
+                            Console.WriteLine("\nAlguma das entradas é inválida!!\n");
 
                         ResetarValores();
 
@@ -69,7 +69,7 @@ namespace CalculadoraPOO.ConsoleApp
                             Console.Write("\nResultado: {0}\n", (Util.ApresentaUmDoubleComDuasCasasDecimais(calculadora.Subtrair(v1, v2))));
                         }
                         else
-                            Console.WriteLine("Alguma das entradas é inválida!!\n");
+                            Console.WriteLine("\nAlguma das entradas é inválida!!\n");
 
                         ResetarValores();
 
@@ -89,7 +89,7 @@ namespace CalculadoraPOO.ConsoleApp
                             Console.Write("\nResultado: {0}\n", (Util.ApresentaUmDoubleComDuasCasasDecimais(calculadora.Multiplicar(v1, v2))));
                         }
                         else
-                            Console.WriteLine("Alguma das entradas é inválida!!\n");
+                            Console.WriteLine("\nAlguma das entradas é inválida!!\n");
 
                         ResetarValores();
 
@@ -112,10 +112,16 @@ namespace CalculadoraPOO.ConsoleApp
                                 Console.WriteLine("\nNão podemos realizar divisões com o valor 0 (ZERO)!!\n");
                         }
                         else
-                            Console.WriteLine("Alguma das entradas é inválida!!\n");
+                            Console.WriteLine("\nAlguma das entradas é inválida!!\n");
 
                         ResetarValores();
 
+                        break;
+
+                    case 5:
+                        Console.WriteLine("\n===== APRESENTANDO O HISTÓRICO DE OPERAÇÕES =====");
+
+                        calculadora.ApresentarHistoricoDeOperacoes();
                         break;
                 }
             }

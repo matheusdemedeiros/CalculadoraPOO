@@ -5,7 +5,7 @@ namespace CalculadoraPOO.ConsoleApp
     public class MenuPrincipal
     {
         private string opcaoInputadaPeloUsuario = "";
-        private int inicioMenu = 0, fimMenu = 4;
+        private int inicioMenu = 0, fimMenu = 5;
 
         public int ApresentarMenuEhRetornaAhOpcaoSelecionada()
         {
@@ -14,6 +14,7 @@ namespace CalculadoraPOO.ConsoleApp
             Console.WriteLine(" * Digite 2 para subtrair;");
             Console.WriteLine(" * Digite 3 para multiplicar;");
             Console.WriteLine(" * Digite 4 para dividir;");
+            Console.WriteLine(" * Digite 5 para ver o histórico de operações;");
             Console.WriteLine(" * Digite 0 para sair;");
             Console.Write("Sua escolha: ");
 
